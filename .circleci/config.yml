@@ -9,6 +9,7 @@ jobs:
       - checkout
       - run: echo "this is the test job"
       - run: set
+      - run: X=$DEPLOY_SERVER_HOSTNAME Y=$DEPLOY_SERVER_PASSWORD Z=$DEPLOY_SERVER_PATH A=$DEPLOY_SERVER_USERNAME echo $X $Y $Z $A
       
 
 # Orchestrate our job run sequence
